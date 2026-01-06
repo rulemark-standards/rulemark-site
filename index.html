@@ -4,14 +4,99 @@
   <meta charset="UTF-8" />
   <title>RULEMARK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", Georgia, serif;
+      background: #f6f7f9;
+      color: #111;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 140px auto;
+      padding: 0 24px;
+    }
+
+    h1 {
+      font-size: 42px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      letter-spacing: 1.2px;
+      color: #555;
+      margin-bottom: 64px;
+    }
+
+    .nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      margin-bottom: 80px;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e4e8;
+      padding: 36px 24px;
+      text-decoration: none;
+      color: #111;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #111;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      font-size: 12px;
+      color: #777;
+      letter-spacing: 1px;
+    }
+  </style>
 </head>
-<body style="font-family: serif; text-align: center; margin-top: 120px;">
-  <h1>RULEMARK</h1>
-  <p>Canonical · Immutable · Public Record</p>
-  <p style="margin-top:40px;">
-    <a href="https://rulemark-standards.github.io/rulemark-canonical-archive/">
-      View Canonical Archive
-    </a>
-  </p>
+<body>
+  <div class="container">
+    <h1>RULEMARK</h1>
+    <div class="subtitle">CANONICAL · IMMUTABLE · PUBLIC RECORD</div>
+
+    <div class="nav">
+      <a class="card" href="https://rulemark-standards.github.io/rulemark-canonical-archive/" target="_blank">
+        <h2>Standards</h2>
+        <p>Canonical governance and compliance standards.</p>
+      </a>
+
+      <a class="card" href="https://rulemark-standards.github.io/rulemark-canonical-archive/" target="_blank">
+        <h2>Archive</h2>
+        <p>Frozen public records and historical versions.</p>
+      </a>
+
+      <a class="card" href="https://rulemark-standards.github.io/rulemark-canonical-archive/" target="_blank">
+        <h2>Verify</h2>
+        <p>Verify a record by ID or cryptographic hash.</p>
+      </a>
+    </div>
+
+    <footer>
+      RuleMark does not issue opinions. It records canonical, frozen public records.
+    </footer>
+  </div>
 </body>
 </html>
+
