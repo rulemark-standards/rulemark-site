@@ -1,249 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>RULEMARK — Canonical · Immutable · Public Record</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    :root {
-      --bg: #f6f6f8;
-      --ink: #111;
-      --muted: #666;
-      --card: #ffffff;
-      --line: #e6e6eb;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Times New Roman", Georgia, serif;
-      background: var(--bg);
-      color: var(--ink);
-      text-align: center;
-    }
-
-    header {
-      padding: 60px 20px 40px;
-    }
-
-    header h1 {
-      font-size: 40px;
-      letter-spacing: 2px;
-      margin: 0 0 12px;
-    }
-
-    header p {
-      font-size: 14px;
-      letter-spacing: 1px;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .hero {
-      padding: 80px 20px 60px;
-    }
-
-    .hero h2 {
-      font-size: 42px;
-      font-weight: normal;
-      margin: 0 0 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: var(--muted);
-      max-width: 720px;
-      margin: 0 auto 40px;
-    }
-
-    .search {
-      max-width: 520px;
-      margin: 0 auto;
-    }
-
-    .search input {
-      width: 100%;
-      padding: 14px 18px;
-      font-size: 15px;
-      border-radius: 6px;
-      border: 1px solid var(--line);
-      outline: none;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 28px;
-      max-width: 900px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 36px 28px;
-      text-align: center;
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: var(--muted);
-      margin: 0 0 20px;
-    }
-
-    .card a {
-      text-decoration: none;
-      font-size: 14px;
-      color: #000;
-      border-bottom: 1px solid #000;
-      padding-bottom: 2px;
-    }
-
-    .featured {
-      max-width: 900px;
-      margin: 100px auto;
-      padding: 0 20px;
-      text-align: left;
-    }
-
-    .featured-box {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 36px;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .featured h4 {
-      font-size: 22px;
-      margin: 0 0 8px;
-    }
-
-    .featured small {
-      display: block;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .featured p {
-      margin: 0 0 16px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .actions a {
-      display: inline-block;
-      margin-right: 12px;
-      padding: 10px 16px;
-      font-size: 13px;
-      border-radius: 6px;
-      border: 1px solid #000;
-      text-decoration: none;
-      color: #000;
-    }
-
-    .seal {
-      width: 120px;
-      height: 120px;
-      border: 2px solid #000;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      text-align: center;
-      padding: 12px;
-      line-height: 1.2;
-    }
-
-    footer {
-      margin: 120px 0 40px;
-      font-size: 12px;
-      color: var(--muted);
-      letter-spacing: 1px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuleMark - Canonical Immutable Public Record</title>
+  <meta name="description" content="A canonical registry for frozen standards and public records">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
-
 <body>
-
-  <header>
-    <h1>RULEMARK</h1>
-    <p>CANONICAL · IMMUTABLE · PUBLIC RECORD</p>
-  </header>
-
-  <section class="hero">
-    <h2>Canonical · Immutable.<br/>Public Record.</h2>
-    <p>
-      A canonical registry for frozen standards and verifiable public records.
-    </p>
-
-    <div class="search">
-      <input type="text" placeholder="Enter Standard ID, Hash, or Keyword…" disabled />
-    </div>
-  </section>
-
-  <section class="cards">
-    <div class="card">
-      <h3>Standards</h3>
-      <p>Canonical governance and compliance standards.</p>
-      <a href="#">View Standards</a>
-    </div>
-
-    <div class="card">
-      <h3>Archive</h3>
-      <p>Frozen public records and historical versions.</p>
-      <a href="https://rulemark-standards.github.io/rulemark-canonical-archive/">View Archive</a>
-    </div>
-
-    <div class="card">
-      <h3>Verify</h3>
-      <p>Verify a record by ID or cryptographic hash.</p>
-      <a href="#">Verify Record</a>
-    </div>
-  </section>
-
-  <section class="featured">
-    <div class="featured-box">
-      <div>
-        <h4>Compliant DAO Framework</h4>
-        <small>DAO-001 · Version 1.0 · Canonical · Frozen</small>
-        <p>
-          Canonical governance and compliance standards for decentralized organizations.
-        </p>
-
-        <div class="actions">
-          <a href="https://rulemark-standards.github.io/rulemark-canonical-archive/peg/peg-001/">View Canonical</a>
-          <a href="#">Download PDF</a>
+  <div class="page-container">
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="site-logo">RULEMARK</a>
+          <nav class="site-nav">
+            <a href="standards/index.html" class="nav-link">Standards</a>
+            <a href="archive/index.html" class="nav-link">Archive</a>
+            <a href="verify/index.html" class="nav-link">Verify</a>
+          </nav>
         </div>
       </div>
+    </header>
 
-      <div class="seal">
-        CANONICAL<br/>
-        IMMUTABLE<br/>
-        RECORD<br/><br/>
-        RULEMARK
+    <main class="main-content">
+      <section class="section">
+        <div class="container-medium">
+          <h1 class="hero-title">RULEMARK</h1>
+          <p class="hero-subtitle">CANONICAL · IMMUTABLE · PUBLIC RECORD</p>
+          <p class="hero-description">
+            A canonical registry for frozen standards and public records.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-muted section-medium">
+        <div class="container-narrow">
+          <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" class="search-input" placeholder="Enter Standard ID, Hash, or Keyword...">
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Standards</h2>
+                <p class="card-description">
+                  Canonical governance and compliance standards.
+                </p>
+              </div>
+              <div class="card-content">
+                <a href="standards/index.html" class="button button-outline button-full">View Standards</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Archive</h2>
+                <p class="card-description">
+                  Frozen public records and historical versions.
+                </p>
+              </div>
+              <div class="card-content">
+                <a href="archive/index.html" class="button button-outline button-full">View Archive</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title">Verify</h2>
+                <p class="card-description">
+                  Verify a record by ID or cryptographic hash.
+                </p>
+              </div>
+              <div class="card-content">
+                <a href="verify/index.html" class="button button-outline button-full">Verify Record</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <h2 class="section-title">Latest Canonical Record</h2>
+
+          <div class="standard-card">
+            <div class="standard-content">
+              <div class="standard-meta">
+                <span class="standard-id">DAO-001</span>
+                <span class="standard-badge">Canonical · Frozen</span>
+              </div>
+              <h2 class="standard-title">Compliant DAO Framework</h2>
+              <p class="standard-description">
+                Defines non-discretionary governance boundaries for decentralized organizations.
+              </p>
+              <a href="standards/dao-001.html" class="button">View Standard</a>
+            </div>
+            <div class="standard-seal">
+              <img src="images/rulemark-seal.svg" alt="RuleMark Seal" class="seal-image">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p class="footer-text">CANONICAL · IMMUTABLE · PUBLIC RECORD</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <footer>
-    RuleMark does not issue opinions. It records canonical, frozen public records.
-  </footer>
-
+    </footer>
+  </div>
 </body>
 </html>
