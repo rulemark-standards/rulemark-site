@@ -396,3 +396,92 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+/* ===== RuleMark Advanced V1 ===== */
+
+.hero {
+  padding: 96px 0 72px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  margin-top: 12px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.hero-description {
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.manifesto {
+  padding: 80px 0;
+}
+
+.manifesto h2 {
+  margin-top: 56px;
+  font-size: 22px;
+}
+
+.manifesto p,
+.manifesto li {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.manifesto ul {
+  margin-left: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card {
+  padding: 32px;
+  border: 1px solid #e5e5e5;
+}
+
+.section-muted {
+  background: #fafafa;
+  padding: 72px 0;
+}
+
+.standard-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e5e5;
+  padding: 32px;
+}
+
+.badge {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.site-footer {
+  padding: 64px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-small {
+  margin-top: 12px;
+  opacity: 0.6;
+}
